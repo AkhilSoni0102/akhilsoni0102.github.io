@@ -8,12 +8,18 @@
   <meta property="og:title" content="Akhil Soni | Software Engineer">
   <meta property="og:description" content="M365 Copilot Desktop, AI systems, and scalable platform engineering.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Akhil Soni | Software Engineer">
+  <meta name="twitter:description" content="M365 Copilot Desktop, AI systems, and scalable platform engineering.">
+  <meta name="twitter:image" content="/assets/og-image.svg">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div class="sidebar">
     <div class="brand">
-      <h2 class="name">Akhil Soni</h2>
+      <h2 class="name"><a class="brand-link" href="/">Akhil Soni</a></h2>
       <p class="tag">Engineer and Builder</p>
     </div>
     <nav class="nav-links" aria-label="Primary">
@@ -51,9 +57,9 @@
       </div>
 
       <div class="cta-row">
-        <a class="cta-button primary" href="/pages/projects.html">View Projects</a>
-        <a class="cta-button secondary" href="/pages/resume.html">Open Resume</a>
-        <a class="cta-button secondary" href="mailto:akhilsoni0102@gmail.com">Contact Me</a>
+        <a class="cta-button primary" href="/pages/projects.html" data-track="home_cta_projects">View Projects</a>
+        <a class="cta-button secondary" href="/pages/resume.html" data-track="home_cta_resume">Open Resume</a>
+        <a class="cta-button secondary" href="mailto:akhilsoni0102@gmail.com" data-track="home_cta_contact">Contact Me</a>
       </div>
 
       <div class="section">
@@ -77,6 +83,26 @@
       </div>
 
       <div class="section">
+        <h2>Featured Case Study</h2>
+        <article class="case-study">
+          <h3>M365 Copilot Desktop Update Reliability</h3>
+          <p>
+            Designed update flow migration from Store-dependent delivery to enterprise-safe XPD based distribution, increasing device coverage and reliability for managed environments.
+          </p>
+          <div class="mini-diagram" aria-label="Update flow diagram">
+            <div class="mini-node">Build + Sign</div>
+            <div class="mini-arrow">-></div>
+            <div class="mini-node">XPD Pipeline</div>
+            <div class="mini-arrow">-></div>
+            <div class="mini-node">74M+ Devices</div>
+          </div>
+          <div class="cta-row">
+            <a class="cta-button secondary" href="/pages/projects.html" data-track="home_case_study_details">See Related Projects</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="section">
         <h2>Connect</h2>
         <p>
           Reach out for collaborations, engineering discussions, and opportunities.
@@ -86,15 +112,15 @@
             <span class="clip-icon" aria-hidden="true">@</span>
             akhilsoni0102@gmail.com
           </a>
-          <a class="meta-link" href="https://github.com/AkhilSoni0102" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
+          <a class="meta-link" href="https://github.com/AkhilSoni0102" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile" data-track="home_connect_github">
             <span class="clip-icon" aria-hidden="true">GH</span>
             GitHub
           </a>
-          <a class="meta-link" href="https://linkedin.com/in/akhilsoni/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
+          <a class="meta-link" href="https://linkedin.com/in/akhilsoni/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile" data-track="home_connect_linkedin">
             <span class="clip-icon" aria-hidden="true">in</span>
             LinkedIn
           </a>
-          <a class="meta-link" href="/assets/Akhil_Soni_Resume.pdf" download aria-label="Download resume PDF">
+          <a class="meta-link" href="/assets/Akhil_Soni_Resume.pdf" download aria-label="Download resume PDF" data-track="home_connect_resume_pdf">
             <span class="clip-icon" aria-hidden="true">PDF</span>
             Download Resume PDF
           </a>
@@ -102,6 +128,7 @@
       </div>
     </div>
   </div>
+  <script src="/assets/js/analytics.js" defer></script>
 </body>
 </html>
 

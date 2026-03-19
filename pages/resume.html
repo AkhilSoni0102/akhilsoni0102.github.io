@@ -8,12 +8,15 @@
   <meta property="og:title" content="Resume | Akhil Soni">
   <meta property="og:description" content="Experience, education, technical skills, and project highlights.">
   <meta property="og:type" content="profile">
+  <meta property="og:image" content="/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <div class="sidebar">
     <div class="brand">
-      <h2 class="name">Akhil Soni</h2>
+      <h2 class="name"><a class="brand-link" href="/">Akhil Soni</a></h2>
       <p class="tag">Software Engineer</p>
     </div>
     <nav class="nav-links" aria-label="Primary">
@@ -30,7 +33,15 @@
       <h1>Resume</h1>
       <p class="subtitle">Software Engineer with experience in AI products, search systems, and cloud platform modernization.</p>
 
-      <div class="section">
+      <nav class="quick-nav" aria-label="Resume quick navigation">
+        <a href="#contact">Contact</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </nav>
+
+      <div class="section" id="contact">
         <h2>Contact</h2>
         <div class="meta-links">
           <a class="meta-link" href="mailto:akhilsoni0102@gmail.com" aria-label="Email Akhil Soni">
@@ -41,22 +52,22 @@
             <span class="clip-icon" aria-hidden="true">PH</span>
             +91-8349598224
           </a>
-          <a class="meta-link" href="https://github.com/AkhilSoni0102" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
+          <a class="meta-link" href="https://github.com/AkhilSoni0102" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile" data-track="resume_connect_github">
             <span class="clip-icon" aria-hidden="true">GH</span>
             github.com/AkhilSoni0102
           </a>
-          <a class="meta-link" href="https://linkedin.com/in/akhilsoni/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
+          <a class="meta-link" href="https://linkedin.com/in/akhilsoni/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile" data-track="resume_connect_linkedin">
             <span class="clip-icon" aria-hidden="true">in</span>
             linkedin.com/in/akhilsoni
           </a>
-          <a class="meta-link" href="../assets/Akhil_Soni_Resume.pdf" download aria-label="Download resume PDF">
+          <a class="meta-link" href="../assets/Akhil_Soni_Resume.pdf" download aria-label="Download resume PDF" data-track="resume_download_pdf">
             <span class="clip-icon" aria-hidden="true">PDF</span>
             Download Resume PDF
           </a>
         </div>
       </div>
 
-      <div class="section">
+      <div class="section" id="experience">
         <h2>
           Experience
           <span class="info-tip" tabindex="0" aria-label="What is this section?">?
@@ -156,7 +167,7 @@
         </div>
       </div>
 
-      <div class="section">
+      <div class="section" id="education">
         <h2>Education</h2>
         <div class="edu-card">
           <h3>Indian Institute of Technology, Guwahati</h3>
@@ -164,7 +175,7 @@
         </div>
       </div>
 
-      <div class="section">
+      <div class="section" id="skills">
         <h2>Technical Skills</h2>
         <div class="skills-grid">
           <p><span class="label">Programming:</span> C++, C#, Python, Kotlin, JavaScript, SQL</p>
@@ -175,7 +186,7 @@
         </div>
       </div>
 
-      <div class="section">
+      <div class="section" id="projects">
         <h2>Key Courses</h2>
         <div class="chip-row">
           <span class="chip">Azure Cloud</span>
@@ -225,6 +236,7 @@
       </div>
     </div>
   </div>
+  <script src="/assets/js/analytics.js" defer></script>
 </body>
 </html>
 

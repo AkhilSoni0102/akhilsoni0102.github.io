@@ -8,12 +8,15 @@
   <meta property="og:title" content="Projects | Akhil Soni">
   <meta property="og:description" content="Concise engineering case studies with measurable outcomes and technology stack.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <div class="sidebar">
     <div class="brand">
-      <h2 class="name">Akhil Soni</h2>
+      <h2 class="name"><a class="brand-link" href="/">Akhil Soni</a></h2>
       <p class="tag">Engineer and Builder</p>
     </div>
     <nav class="nav-links" aria-label="Primary">
@@ -31,7 +34,7 @@
       <p class="subtitle">Case-study view with outcomes and tech stack. Full chronology is on Resume.</p>
 
       <div class="cta-row">
-        <a class="cta-button secondary" href="/pages/resume.html">View Full Timeline</a>
+        <a class="cta-button secondary" href="/pages/resume.html" data-track="projects_cta_timeline">View Full Timeline</a>
       </div>
 
       <div class="section">
@@ -105,7 +108,7 @@
               <span class="chip">Linear SVC</span>
             </div>
             <div class="meta-links">
-              <a class="meta-link" href="https://github.com/AkhilSoni0102/Amazon-ML-Challenge" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              <a class="meta-link" href="https://github.com/AkhilSoni0102/Amazon-ML-Challenge" target="_blank" rel="noopener noreferrer" data-track="projects_amazon_repo">View on GitHub</a>
             </div>
           </article>
 
@@ -120,13 +123,14 @@
               <span class="chip">NLP</span>
             </div>
             <div class="meta-links">
-              <a class="meta-link" href="https://github.com/AkhilSoni0102/Image-Captioning" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              <a class="meta-link" href="https://github.com/AkhilSoni0102/Image-Captioning" target="_blank" rel="noopener noreferrer" data-track="projects_caption_repo">View on GitHub</a>
             </div>
           </article>
         </div>
       </div>
     </div>
   </div>
+  <script src="/assets/js/analytics.js" defer></script>
 </body>
 </html>
 
