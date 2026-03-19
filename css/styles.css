@@ -23,3 +23,21 @@ p {
   opacity: 0.8;
 }
 
+.nav {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.nav a {
+  color: #e2e8f0;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
