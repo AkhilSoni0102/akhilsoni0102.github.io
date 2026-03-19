@@ -195,6 +195,96 @@ p {
   color: #5e4a33;
 }
 
+.meta-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.meta-link {
+  text-decoration: none;
+  border: 1px solid var(--line);
+  color: #5b442a;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.meta-link:hover {
+  color: #fff;
+  background: linear-gradient(120deg, var(--accent) 0%, var(--accent-soft) 100%);
+  border-color: transparent;
+}
+
+.timeline {
+  display: grid;
+  gap: 16px;
+}
+
+.timeline-item {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.timeline-item h3 {
+  margin: 0;
+  font-size: 1.18rem;
+}
+
+.timeline-meta {
+  margin: 7px 0 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.timeline-item ul,
+.resume-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.timeline-item li,
+.resume-list li {
+  margin-bottom: 9px;
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 20px;
+}
+
+.skills-grid p {
+  margin: 0;
+}
+
+.label {
+  font-weight: 700;
+  color: #4d391f;
+}
+
+.edu-card {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.edu-card h3 {
+  margin: 0 0 6px;
+}
+
+.edu-card p {
+  margin: 0;
+}
+
 @keyframes rise-in {
   from {
     opacity: 0;
@@ -256,6 +346,10 @@ p {
 
   .section {
     margin-bottom: 26px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
 
