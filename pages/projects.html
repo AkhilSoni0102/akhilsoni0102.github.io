@@ -3,19 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <title>Projects - Akhil Soni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <div class="sidebar">
-    <h2>Akhil</h2>
-    <a href="/">Home</a>
-    <a href="/pages/about.html">About</a>
-    <a href="/pages/projects.html">Projects</a>
+    <div class="brand">
+      <h2 class="name">Akhil Soni</h2>
+      <p class="tag">Engineer and Builder</p>
+    </div>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/pages/about.html">About</a>
+      <a class="active" href="/pages/projects.html">Projects</a>
+    </nav>
+    <p class="sidebar-note">Selected work across systems, tooling, and developer experience.</p>
   </div>
 
   <div class="main">
     <div class="container">
-      <!-- your content here -->
+      <h1>Projects</h1>
+      <p class="subtitle">Things I have built and actively evolved.</p>
+
+      <div class="section">
+        <h2>Selected Work</h2>
+        <div class="project-list">
+          <article class="project-card">
+            <h3>Agentic Infrastructure Toolkit</h3>
+            <p>
+              A modular toolkit for automating deployment workflows with policy checks, reusable templates, and observability hooks.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Distributed Task Orchestrator</h3>
+            <p>
+              A queue-driven orchestration service designed for high throughput workloads with retry, scheduling, and dead-letter strategies.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Developer Productivity Dashboard</h3>
+            <p>
+              A dashboard that tracks build performance, flaky tests, and release quality trends to improve engineering velocity.
+            </p>
+          </article>
+        </div>
+      </div>
     </div>
   </div>
 </body>
