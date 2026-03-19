@@ -261,10 +261,88 @@ p {
   font-size: 1.18rem;
 }
 
+.timeline-item h4 {
+  margin: 0;
+  font-size: 1.02rem;
+  color: #3c2d1c;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .timeline-meta {
   margin: 7px 0 10px;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.team-block {
+  border: 1px dashed #d4bb95;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.35);
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.team-block:last-child {
+  margin-bottom: 0;
+}
+
+.team-label {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+.team-tech {
+  margin-top: 12px;
+}
+
+.info-tip {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #8a6039;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  position: relative;
+  cursor: help;
+  outline: none;
+}
+
+.tip-content {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%);
+  width: min(320px, 78vw);
+  background: #f6ecdc;
+  color: #3f2f1d;
+  border: 1px solid #cfae84;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  box-shadow: 0 8px 18px rgba(85, 57, 28, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.info-tip:hover .tip-content,
+.info-tip:focus .tip-content {
+  opacity: 1;
+  visibility: visible;
 }
 
 .timeline-item ul,
@@ -374,6 +452,11 @@ p {
 
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .tip-content {
+    left: 0;
+    transform: none;
   }
 }
 
