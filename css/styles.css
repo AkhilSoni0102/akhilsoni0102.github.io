@@ -261,6 +261,33 @@ p {
   font-size: 1.18rem;
 }
 
+.experience-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.timeline-badge {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #5b442a;
+  background: #f2e3cb;
+  border: 1px solid #d6ba91;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.org-name {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .timeline-item h4 {
   margin: 0;
   font-size: 1.02rem;
@@ -319,6 +346,7 @@ p {
 }
 
 .tip-content {
+  display: block;
   position: absolute;
   left: 50%;
   bottom: calc(100% + 10px);
@@ -452,6 +480,15 @@ p {
 
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .experience-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .timeline-badge {
+    white-space: normal;
   }
 
   .tip-content {
